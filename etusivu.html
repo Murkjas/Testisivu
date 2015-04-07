@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<title>Henkilot</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link type="text/css" rel="stylesheet" href="henkilocss.css">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		<script src="Javascript.js"></script>
+	</head>
+<body>
+<div class="container">
+<nav>
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active"><a href="etusivu.html">Etusivu</a></li>
+        <li><a href="dnd.html">Jotain</a></li>
+        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+          Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">DD1</a></li>
+            <li><a href="#">DD2</a></li>
+            <li><a href="#">DD3</a></li>                        
+          </ul>
+        </li>
+      </ul>
+</nav>
+<div id="formdiv">
+	<form id ="formi" name="form">
+		<label>Etunimi: </label><br/>
+		<input type="text" name="enimi" value="" id="enimi"/> <p id="etuvirhe" style="display:inline; color:red"></p><br/>
+		<label>Sukunimi: </label><br/>
+		<input type="text" name="snimi" value="" id="snimi"/><p id="sukuvirhe" style="display:inline; color:red"></p><br/>
+		<label>Ikä: </label><br/>
+		<input type="text" name="ika" value="" id="ika"/><p id="ikavirhe" style="display:inline; color:red"></p><br/>
+		<input type="button" value="Lisää" onclick="lisaa()">
+		<input type="reset" value="Tyhjennä" name="reset1">
+	</form>
+</div> <!-- formdiv -->
+
+<div id="listadiv">
+<!-- Tähän tulee syötetyt oliot -->
+</div>
+	<button onclick="tyhjenna()" id="poisto">Tyhjennä Lista</button>
+	</div> <!-- container -->
+
+</body>
+</html>
