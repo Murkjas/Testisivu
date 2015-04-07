@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<title>DragDrop</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link type="text/css" rel="stylesheet" href="henkilocss.css">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		<script src="Javascript.js"></script>
+	</head>
+<body>
+<div class="container">
+<nav>
+<ul class="nav nav-tabs" role="tablist">
+        <li><a href="etusivu.html">Etusivu</a></li>
+        <li class="active"><a href="dnd.html">Jotain</a></li>
+        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+          Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">DD1</a></li>
+            <li><a href="#">DD2</a></li>
+            <li><a href="#">DD3</a></li>                        
+          </ul>
+        </li>
+      </ul>
+</nav>
+
+
+<section>
+<h1 id="dndhead">
+Upota pallo oikeaan reikään!
+</h1>
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"><img id="pallo" src="ympyrä.jpg"></div>
+<div id="div1"><img id="11"  src="neliö.jpg"></div>
+<div id="div1"><img id="11"  src="kolmio.jpg"></div>
+
+<img id="drag1" src="oikeaympyrä.jpg" draggable="true"
+ondragstart="drag(event)" width="150" height="100">
+
+<button id="reloadbutton" onclick="reload()">Reset</button>
+</section>
+
+</div> <!-- container -->
+</body>
+</html>
